@@ -12,7 +12,6 @@ def monte(country, station, N, years_predict, confidence_level, offset, pred_pos
     ####----Processing----####
     alpha = 1 - confidence_level/100
     confidence = norm.ppf(1 - alpha / 2)
-    print(confidence)
 
     PCA = pd.read_pickle(f"../data/pca/{country}.pkl")
     t_fit = np.arange(50, int(years_predict * 365.25) , 7)
@@ -25,7 +24,7 @@ def monte(country, station, N, years_predict, confidence_level, offset, pred_pos
     data_df['date'] = pd.to_datetime(data_df['date'])
 
     # Define reference date
-    quake_date = pd.to_datetime('2004-11-15')
+    quake_date = pd.to_datetime('2004-11-30')
 
     # Find the closest date in the column
     data_df['date'] = pd.to_datetime(data_df['date']).dt.normalize()
