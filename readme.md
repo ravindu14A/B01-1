@@ -12,7 +12,7 @@ earthquake occurrence at the Sumatra-Andaman subduction interface.
   - KUAL (Malaysia): 2306 ± 81.2 years
   - USMP (Malaysia): 2228 ± 16.9 years
   - BEHR (Malaysia): 2258 ± 81.9 years
-  - PHUK (Thailand): 2241 ± 20.1 years
+  - PHUK (Thailand): 2218 ± 7.7 years
 
 ## Project Structure
 
